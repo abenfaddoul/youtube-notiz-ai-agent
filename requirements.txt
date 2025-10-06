@@ -1,0 +1,7 @@
+# AI & API Clients
+groq==0.32.0
+mistralai==1.9.11
+youtube-transcript-api==1.2.2
+
+# Environment & Utilities
+python-dotenv==1.1.1

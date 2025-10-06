@@ -1,0 +1,18 @@
+# --- AI / MODEL ---
+AI_PROVIDER=groq # primärer Anbieter: "groq" oder "mistral"
+DEFAULT_MODEL=llama-3.3-70b-versatile
+MISTRAL_MODEL=mistral-large-latest
+
+# --- API KEYS ---
+GROQ_API_KEY=YOUR_GROQ_API_KEY
+MISTRAL_API_KEY=YOUR_MISTRAL_API_KEY
+
+# --- FEATURES ---
+LANGUAGES=de,en
+INCLUDE_TIMESTAMPS=true
+EXTRACT_QUOTES=true
+OUTPUT_DIR=output
+
+# --- LOGGING ---
+LOG_LEVEL=INFO
+LOG_FORMAT=%(asctime)s [%(levelname)s] %(message)s
