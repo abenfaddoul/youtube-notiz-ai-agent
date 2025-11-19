@@ -3,8 +3,7 @@ name: CI - Python tests
 on:
   push:
     branches:
-      - main
-      - develop
+      - master
   pull_request:
     branches:
       - main
