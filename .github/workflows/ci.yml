@@ -24,5 +24,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          ${{ secrets.DOCKERHUB_USERNAME }}/dein-repo-name:latest
-          ${{ secrets.DOCKERHUB_USERNAME }}/dein-repo-name:${{ github.sha }}
+          ${{ secrets.DOCKERHUB_USERNAME }}/youtube-ai-agent:latest
+          ${{ secrets.DOCKERHUB_USERNAME }}/youtube-ai-agent:${{ github.sha }}
