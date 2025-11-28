@@ -24,4 +24,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/youtube-ai-agent:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/youtube-ai-agent:${{ github.sha }}
