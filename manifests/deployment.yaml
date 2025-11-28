@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-agent-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-agent
+  template:
+    metadata:
+      labels:
+        app: ai-agent
+    spec:
+      containers:
+      - name: ai-agent-container
+        # WICHTIG: Ersetzen Sie dies durch Ihren Docker Hub Pfad und Tag (SHA-Tag empfohlen!)
+        image: ${{ secrets.DOCKERHUB_USERNAME }}/youtube-ai-agent:${{ github.sha }}
+        ports:
+        - containerPort: 8080 # Der Port, den Ihr Agent in der App nutzt
